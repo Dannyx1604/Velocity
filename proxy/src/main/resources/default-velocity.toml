@@ -98,6 +98,13 @@ try = [
     "minigames"
 ]
 
+[per-server-forwarding-secrets]
+# Configure unique forwarding secrets per server here.
+enabled = false
+lobby = "TKO1sAMsykiE"
+factions = "bUGgiqLhg5b2"
+minigames = "EEepd1IsOfWl"
+
 [advanced]
 # How large a Minecraft packet has to be before we compress it. Setting this to zero will
 # compress all packets, and setting it to -1 will disable compression entirely.

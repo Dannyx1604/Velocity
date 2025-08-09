@@ -101,6 +101,13 @@ public interface ProxyConfig {
   Map<String, List<String>> getForcedHosts();
 
   /**
+   * Get individual forwarding secret per server.
+   *
+   * @return server names mapped to their respective forwarding secrets
+   */
+  Map<String, byte[]> getPerServerForwardingSecrets();
+
+  /**
    * Get the minimum compression threshold for packets.
    *
    * @return the compression threshold
