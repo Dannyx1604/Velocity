@@ -101,7 +101,7 @@ public interface ProxyConfig {
   Map<String, List<String>> getForcedHosts();
 
   /**
-   * Get individual forwarding secret per server.
+   * Get individual forwarding secrets per server.
    *
    * @return server names mapped to their respective forwarding secrets
    */

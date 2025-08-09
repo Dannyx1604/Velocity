@@ -92,6 +92,7 @@ public class VelocityConfiguration implements ProxyConfig {
   private @Nullable Favicon favicon;
   @Expose
   private boolean forceKeyAuthentication = true; // Added in 1.19
+  @Expose
   private PerServerForwardingSecrets perServerForwardingSecrets;
 
   private VelocityConfiguration(Servers servers, ForcedHosts forcedHosts, PerServerForwardingSecrets perServerForwardingSecrets, Advanced advanced,
@@ -601,6 +602,10 @@ public class VelocityConfiguration implements ProxyConfig {
 
   public boolean isEnableReusePort() {
     return advanced.isEnableReusePort();
+  }
+
+  public boolean isPerServerForwardingSecretsEnabled() {
+    return this.perServerForwardingSecrets.enabled;
   }
 
   @Override
